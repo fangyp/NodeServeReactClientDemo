@@ -1,0 +1,15 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "a node server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fangyangping",
+  "license": "ISC",
+  "dependencies": {
+    "excel-export": "^0.5.1",
+    "express": "^4.17.1"
+  }
+}
