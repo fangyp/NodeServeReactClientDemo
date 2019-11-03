@@ -37,7 +37,7 @@ export default class App extends React.Component {
       visible: false,
       editRow: { ...defaultRow },
       form: {
-        inputText: '2020.2.20  午宴  新人：徐旭斌 诸梦姣  18626071337 15052214282  策划师：费红玉   红星店  同庆CD厅  请安排一个1900双机摄影  收到请回复',
+        inputText: '',
       },
       columns: [
         {
@@ -251,8 +251,11 @@ export default class App extends React.Component {
       })
     }).then(response => response.json())
       .then(response => {
-        console.log('Success:', response)
-
+        this.setState({
+          form: {
+            inputText: '',
+          },
+        })
         const { result = [], msg = '' } = response;
         this.setState({
           data: result
