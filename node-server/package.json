@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "excel-export": "^0.5.1",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
